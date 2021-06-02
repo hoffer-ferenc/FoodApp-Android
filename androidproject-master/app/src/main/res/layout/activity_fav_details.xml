@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/FAVcontainer"
+    tools:context=".FavDetails">
+
+    <ImageView
+        android:id="@+id/image_activity_FAVdetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/title_activity_FAVdetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:text="Title"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_activity_FAVdetail"
+        app:layout_constraintStart_toStartOf="@+id/image_activity_FAVdetail"
+        app:layout_constraintTop_toBottomOf="@+id/image_activity_FAVdetail" />
+
+    <TextView
+        android:id="@+id/caloriesTextViewFAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Calories:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/image_activity_FAVdetail"
+        app:layout_constraintTop_toBottomOf="@+id/title_activity_FAVdetail" />
+
+    <TextView
+        android:id="@+id/caloriesValueTextViewFAV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Calories Value"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/caloriesTextViewFAV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caloriesTextViewFAV" />
+
+    <TextView
+        android:id="@+id/carbsTextViewFAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Carbs:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/image_activity_FAVdetail"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesTextViewFAV" />
+
+    <TextView
+        android:id="@+id/carbsValueTextViewFAV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Carbs Value"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/carbsTextViewFAV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/caloriesValueTextViewFAV" />
+
+    <TextView
+        android:id="@+id/fatTextViewFAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Fat:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/image_activity_FAVdetail"
+        app:layout_constraintTop_toBottomOf="@+id/carbsTextViewFAV" />
+
+    <TextView
+        android:id="@+id/fatValueTextViewFAV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Fat Value"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fatTextViewFAV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/caloriesValueTextViewFAV" />
+
+    <TextView
+        android:id="@+id/proteinTextViewFAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Protein:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/image_activity_FAVdetail"
+        app:layout_constraintTop_toBottomOf="@+id/fatTextViewFAV" />
+
+    <TextView
+        android:id="@+id/proteinValueTextViewFAV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Protein Value"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/proteinTextViewFAV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/caloriesValueTextViewFAV" />
+
+    <Button
+        android:id="@+id/removeFavButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Remove from favorites"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
